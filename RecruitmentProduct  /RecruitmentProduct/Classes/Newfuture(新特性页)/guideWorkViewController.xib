@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="guideWorkViewController">
+            <connections>
+                <outlet property="locateBtnT" destination="kU8-21-Hh8" id="ySV-xl-UNO"/>
+                <outlet property="searchView" destination="crJ-MX-AEt" id="cNI-eH-3x6"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kU8-21-Hh8">
+                    <rect key="frame" x="8" y="96" width="80" height="35"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="NAY-jD-5Ww"/>
+                        <constraint firstAttribute="width" constant="80" id="Tcg-9A-Loj"/>
+                    </constraints>
+                    <state key="normal" title="城市" image="icon_address"/>
+                    <connections>
+                        <action selector="locateClick:" destination="-1" eventType="touchUpInside" id="qxc-34-4Ur"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="efO-mN-fa4">
+                    <rect key="frame" x="95" y="449" width="131" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="02d-8G-IJK"/>
+                        <constraint firstAttribute="width" constant="131" id="76B-F3-Sez"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                    <state key="normal" title="快去看看吧">
+                        <color key="titleColor" red="0.99440594471098187" green="0.98007159453279313" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="searchClick:" destination="-1" eventType="touchUpInside" id="3Ps-ni-loZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="USY-Jv-XIE">
+                    <rect key="frame" x="125" y="519" width="71" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="71" id="Rbu-bC-61R"/>
+                        <constraint firstAttribute="height" constant="30" id="YEF-7W-eFE"/>
+                    </constraints>
+                    <state key="normal" title="随便逛逛">
+                        <color key="titleColor" red="0.023835155579214496" green="0.023491572087541612" blue="0.023969240837696359" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                    <connections>
+                        <action selector="withoutClick:" destination="-1" eventType="touchUpInside" id="jGQ-RQ-Z9V"/>
+                    </connections>
+                </button>
+                <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="请输入你想要的吧...如:销售经理" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="crJ-MX-AEt">
+                    <rect key="frame" x="96" y="94" width="216" height="40"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="40" id="tHu-BM-7wH"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+            </subviews>
+            <color key="backgroundColor" red="1" green="0.53709637904647634" blue="0.61547958624667221" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="kU8-21-Hh8" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="8" id="109-4d-Gus"/>
+                <constraint firstAttribute="trailing" secondItem="crJ-MX-AEt" secondAttribute="trailing" constant="8" id="1KO-9I-lqa"/>
+                <constraint firstAttribute="bottom" secondItem="USY-Jv-XIE" secondAttribute="bottom" constant="19" id="3QX-Jr-ofE"/>
+                <constraint firstItem="crJ-MX-AEt" firstAttribute="leading" secondItem="kU8-21-Hh8" secondAttribute="trailing" constant="8" id="5Hh-7O-B7K"/>
+                <constraint firstItem="kU8-21-Hh8" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="96" id="DJy-H4-T6o"/>
+                <constraint firstItem="USY-Jv-XIE" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="L7k-Y9-CIK"/>
+                <constraint firstItem="USY-Jv-XIE" firstAttribute="top" secondItem="efO-mN-fa4" secondAttribute="bottom" constant="40" id="bey-zn-r3f"/>
+                <constraint firstItem="efO-mN-fa4" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="qNi-0y-D1z"/>
+                <constraint firstItem="crJ-MX-AEt" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="94" id="woR-CE-MbM"/>
+            </constraints>
+            <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
+            <point key="canvasLocation" x="320" y="323"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="icon_address" width="16" height="21"/>
+    </resources>
+</document>
